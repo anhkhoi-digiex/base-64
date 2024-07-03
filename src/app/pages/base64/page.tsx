@@ -8,8 +8,6 @@ const Base64 = () => {
     const [temp, setTemp] = useState<string>("")    
 
 
-    
-
     const decodeBase64 = (data: string) => {
         try {
             if (data == "") {
@@ -41,7 +39,7 @@ const Base64 = () => {
     }
 
     return (
-        <div className='grid gap-10 m-5'>
+        <div className='grid gap-5'>
             <div className='flex justify-center'>
                 <div className='group' onClick={() => { setIsDecode(true); decodeBase64(temp) }} >
                     <button className={`${isDecode == true ? "bg-pink-500 px-5 py-2 font-bold text-white uppercase" : "group-hover:bg-pink-300 bg-slate-500 px-5 py-2 font-bold text-white uppercase"}`}>decode</button>
